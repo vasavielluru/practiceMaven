@@ -13,6 +13,9 @@ pipeline{
                 message "Should we continue?"
                 ok "Yes, we should."
             }
+      steps {
+                echo "Hello,  nice to meet you."
+      }
     }
     stage("build")
     {

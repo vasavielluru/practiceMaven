@@ -1,6 +1,6 @@
 pipeline{
   agent none
-  triggers { cron('* * * * *') }
+  triggers { cron('H/15 * * * *') }
   options
   {
    timeout(time: 15, unit: 'MINUTES') 

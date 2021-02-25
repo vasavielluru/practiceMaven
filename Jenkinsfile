@@ -119,6 +119,8 @@ echo "previous build is failed and current build is successful!"
     success
     {
       echo "pipeline running is successful!"
+      echo "========Deploying executed successfully========"
+            mail bcc: '', body: 'deploying is sucesfull', cc: '', from: '', replyTo: '', subject: 'deployed', to: 'net2bks@gmail.com'
     }
     unstable
     {

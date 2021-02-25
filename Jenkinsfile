@@ -60,6 +60,23 @@ pipeline{
 
     }
     }
+    stage ('sonar bulid and analysis')
+    {
+      agent {
+ docker
+      {
+        image 'maven:3.6.3-jdk-11'
+        args '-v /root/.m2:/root/.m2'
+      }
+    }
+      steps
+      {
+        withSonarQubeEnv('sonar-service') {
+                sh 'java -version'
+                sh 'mvn clean package sonar:sonar'
+              }
+      }
+    }
     } 
   post 
   {

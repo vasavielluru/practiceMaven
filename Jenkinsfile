@@ -71,7 +71,7 @@ pipeline{
     }
       steps
       {
-        withSonarQubeEnv('sonarService') {
+        withSonarQubeEnv('SonarSpring') {
                 sh 'java -version'
                 sh 'mvn clean package sonar:sonar'
               }

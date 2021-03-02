@@ -5,6 +5,9 @@ pipeline{
    timeout(time: 15, unit: 'MINUTES') 
     timestamps()
   }
+  triggers {
+        pollSCM '* * * * *'
+    }
   stages
   {
     stage('Example') {

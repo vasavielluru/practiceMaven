@@ -97,7 +97,7 @@ pipeline{
   {
     always
     {
-      echo "runs the steps regardless of completion status!"
+      echo "runs the steps regardless of completion status!!"
     }
     fixed
     {

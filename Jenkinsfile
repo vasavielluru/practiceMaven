@@ -101,7 +101,7 @@ pipeline{
     }
     fixed
     {
-echo "previous build is failed and current build is successful!"
+echo "previous build is failed and current build is successful!!"
      }
     changed
     {

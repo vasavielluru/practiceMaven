@@ -6,3 +6,4 @@ Sometimes not all the commits are supposed to trigger the CI/CD workflow, for ex
 Now you want to ignore Jenkins build/trigger if commits are in either rubbish-dir or in README.md, then you need to add these two in the excluded regions under Git additional behaviors.
 That’s it. Now Jenkins will only poll for the changes in src directory or in pom.xml. Similarly if you need another Jenkins job to only poll for changes in rubbish-directory, then add the “rubbish-dir/.*” to the Included Regions. 
 thank you.
+hi hello

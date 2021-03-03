@@ -105,7 +105,7 @@ echo "previous build is failed and current build is successful!!"
      }
     changed
     {
-      echo "the current pipeline has different completion status compared to pervious!"
+      echo "the current pipeline has different completion status compared to pervious!!"
     }
     regression
     {

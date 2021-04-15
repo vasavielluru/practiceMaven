@@ -91,8 +91,8 @@ pipeline{
             steps {
                 waitForQualityGate abortPipeline: true
             }
-        }
-    } */
+        }*/
+    } 
   post 
   {
     always

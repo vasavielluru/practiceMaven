@@ -72,7 +72,7 @@ pipeline{
         args '-v /root/.m2:/root/.m2'
       }
     }
-      steps
+      /*steps
       {
         withSonarQubeEnv('SonarSpring') {
                 sh 'java -version'
@@ -92,7 +92,7 @@ pipeline{
                 waitForQualityGate abortPipeline: true
             }
         }
-    } 
+    } */
   post 
   {
     always
